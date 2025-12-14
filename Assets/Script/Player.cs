@@ -16,12 +16,18 @@ public class Player : MonoBehaviour
     {
         if(Input.GetKey(KeyCode.D))
         {
-            transform.position += new Vector3(speed*Time.deltaTime,0,0);
+            if(transform.position.x < -370)
+            {
+                transform.position += new Vector3(speed*Time.deltaTime,0,0);
+            }
         }
 
         if(Input.GetKey(KeyCode.A))
         {
-            transform.position += new Vector3(-speed * Time.deltaTime,0,0);
+            if(transform.position.x > -1100)
+            {
+                transform.position += new Vector3(-speed * Time.deltaTime,0,0);
+            }
         }
     }
 }
