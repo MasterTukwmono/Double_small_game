@@ -10,7 +10,8 @@ public class Main : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {
-             SceneManager.LoadScene("Main");
+            point.Score = 0;
+            SceneManager.LoadScene("Main");
         }
     }
 }

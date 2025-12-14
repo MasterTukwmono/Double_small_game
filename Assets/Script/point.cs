@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class point : MonoBehaviour
 {
     public static float Score = 0;
-    private float Timer = 0;
+    public float Timer = 0;
     public Text Score_Text;
     void Start()
     {
