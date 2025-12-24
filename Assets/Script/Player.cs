@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKey(KeyCode.D))
+        if(Input.GetKey(KeyCode.L))
         {
             if(transform.position.x < -370)
             {
@@ -22,7 +22,7 @@ public class Player : MonoBehaviour
             }
         }
 
-        if(Input.GetKey(KeyCode.A))
+        if(Input.GetKey(KeyCode.J))
         {
             if(transform.position.x > -1100)
             {
