@@ -478,6 +478,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d894e03122258742a56a539562512ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Timer: 0
   Score_Text: {fileID: 795832881}
 --- !u!114 &1389584649
 MonoBehaviour:
@@ -488,7 +489,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1389584643}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e799ba99b9d53f34db0bfa1bc4975bbb, type: 3}
+  m_Script: {fileID: 11500000, guid: 183878280e1987b43b05a4b7d57e5fa7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1415519155

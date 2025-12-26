@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class Bar : MonoBehaviour
 {
-    private float Speed = 200.0f;
+    private float Speed = 300.0f;
     public bool overTarget = false;
 
     private void Update()

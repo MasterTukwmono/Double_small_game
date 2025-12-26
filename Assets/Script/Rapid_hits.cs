@@ -32,7 +32,7 @@ public class Rapid_hits : MonoBehaviour
         KeyTime += Time.deltaTime;
         coolTime += Time.deltaTime;
 
-        if (coolTime >= 4f)
+        if (coolTime >= 2f)
         {
             if (OUTtimer >= 0.40f)
             {
@@ -48,7 +48,7 @@ public class Rapid_hits : MonoBehaviour
             PickNewKey();
             KeyTime = 0f;
             coolTime = 0f;
-            Key_cup = Random.Range(3, 21); 
+            Key_cup = Random.Range(2, 11); 
         }
 
         if (Input.GetKeyDown(currentKey))
