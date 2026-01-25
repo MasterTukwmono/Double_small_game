@@ -6,7 +6,23 @@ using UnityEngine.SceneManagement;
 
 public class HoldKey : MonoBehaviour
 {
-    private bool CanHold = true;
+    public bool CanHold = true;
+    public GameObject Barrier;
+    private MeshRenderer[] mrs;
+
+
+    private void Start()
+    {
+         mrs = Barrier.GetComponentsInChildren<MeshRenderer>();
+    }
+
+    void SetBarrierVisible(bool visible)
+    {
+    foreach (var r in mrs)
+        {
+            r.enabled = visible;
+        }
+    }
 
     private void Update()
     {
@@ -14,6 +30,22 @@ public class HoldKey : MonoBehaviour
             {
                 CanHold = true;
             }
+
+        if(Input.GetKey(KeyCode.S))
+        {
+            if(CanHold == true)
+            {
+                SetBarrierVisible(true);
+            }
+            else
+            {
+                SetBarrierVisible(false);
+            }
+        }
+        else
+        {
+            SetBarrierVisible(false);
+        }
     }
 
     private void OnTriggerStay(Collider other)
@@ -23,6 +55,7 @@ public class HoldKey : MonoBehaviour
             if(CanHold == false)
             {
                 SceneManager.LoadScene("GameOver");
+                
             }
             else
             if(!Input.GetKey(KeyCode.S))
