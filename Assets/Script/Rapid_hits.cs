@@ -23,7 +23,7 @@ public class Rapid_hits : MonoBehaviour
     {
         objects = new GameObject[] { wObject, aObject, sObject, dObject };
         PickNewKey();
-        Key_cup = Random.Range(3, 21); 
+        Key_cup = Random.Range(2, 11); 
     }
 
     void Update()

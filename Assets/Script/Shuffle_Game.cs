@@ -61,7 +61,7 @@ public class Shuffle_Game : MonoBehaviour
     void Start()
     {
         shuffle();
-        Game_cup = Random.Range(15,30);
+        Game_cup = Random.Range(7,18);
     }
 
     void Update()
