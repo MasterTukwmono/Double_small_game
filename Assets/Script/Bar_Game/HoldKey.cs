@@ -18,7 +18,7 @@ public class HoldKey : MonoBehaviour
 
     void SetBarrierVisible(bool visible)
     {
-    foreach (var r in mrs)
+        foreach (var r in mrs)
         {
             r.enabled = visible;
         }
@@ -26,14 +26,14 @@ public class HoldKey : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.S))
-            {
-                CanHold = true;
-            }
-
-        if(Input.GetKey(KeyCode.S))
+        if (Input.GetKeyDown(KeyCode.X))
         {
-            if(CanHold == true)
+            CanHold = true;
+        }
+
+        if (Input.GetKey(KeyCode.X))
+        {
+            if (CanHold == true)
             {
                 SetBarrierVisible(true);
             }
@@ -50,25 +50,25 @@ public class HoldKey : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if(other.gameObject.tag == "Target")
+        if (other.gameObject.tag == "Target")
         {
-            if(CanHold == false)
+            if (CanHold == false)
             {
                 SceneManager.LoadScene("GameOver");
-                
+
             }
             else
-            if(!Input.GetKey(KeyCode.S))
-            {
-                SceneManager.LoadScene("GameOver");
-            }
+                if (!Input.GetKey(KeyCode.X))
+                {
+                    SceneManager.LoadScene("GameOver");
+                }
         }
     }
-    
+
 
     private void OnTriggerExit(Collider other)
     {
-        if(other.gameObject.tag == "Target")
+        if (other.gameObject.tag == "Target")
         {
             CanHold = false;
         }

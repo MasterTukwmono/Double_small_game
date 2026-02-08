@@ -12,7 +12,7 @@ public class Bar : MonoBehaviour
 
     public GameObject holdkey;
     public HoldKey HK;
-    
+
 
     private void Start()
     {
@@ -22,23 +22,23 @@ public class Bar : MonoBehaviour
 
     private void Update()
     {
-      transform.position += transform.right *Speed *Time.deltaTime;
-      if(HK.CanHold == true)
+        transform.position += transform.right * Speed * Time.deltaTime;
+        if (HK.CanHold == true)
         {
-           if(Input.GetKeyDown(KeyCode.S))
+            if (Input.GetKeyDown(KeyCode.X))
             {
                 Renderer renderer = GetComponent<Renderer>();
                 Color c = renderer.material.color; // もともとの色を取得
                 c.a = 50f;                           // 透明度だけ変更
                 renderer.material.color = c;
 
-            } 
+            }
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Target"))
+        if (other.CompareTag("Target"))
         {
             overTarget = true;
         }
@@ -46,11 +46,11 @@ public class Bar : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        if(other.CompareTag("Target"))
+        if (other.CompareTag("Target"))
         {
             overTarget = false;
         }
     }
 
-    
+
 }
