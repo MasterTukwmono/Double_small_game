@@ -549,10 +549,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1159212009}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 185.22726, y: -178.6022}
-  m_SizeDelta: {x: 370.4546, y: 62.7956}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 70, y: 15}
+  m_SizeDelta: {x: 370.4546, y: 62.795593}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &672823590
 MonoBehaviour:
@@ -1214,7 +1214,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u9023\u6253\u30B2\u30FC\u30E0\n\uFF57\u304C\u2191A\u304C\u2190\nS\u304C\u2193D\u304C\u2192"
+  m_Text: "\u9023\u6253\u30B2\u30FC\u30E0\nW\u304C\u2191A\u304C\u2190\nS\u304C\u2193D\u304C\u2192"
 --- !u!222 &1529122928
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1369,7 +1369,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u843D\u3061\u30E2\u30CE\u907F\u3051\nj\u3067\u2190\u3001L\u3067\u2192\n\u306B\u52D5\u304F"
+  m_Text: "\u843D\u3061\u30E2\u30CE\u907F\u3051\nJ\u3067\u2190\u3001L\u3067\u2192\n\u306B\u52D5\u304F"
 --- !u!222 &1733253032
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1635,7 +1635,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u98A8\u8239\u30B2\u30FC\u30E0\ni\u3067\u81A8\u3089\u307E\u305B\u308B\n"
+  m_Text: "\u98A8\u8239\u30B2\u30FC\u30E0\nI\u3067\u81A8\u3089\u307E\u305B\u308B\n"
 --- !u!222 &2135585318
 CanvasRenderer:
   m_ObjectHideFlags: 0

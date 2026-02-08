@@ -21,19 +21,22 @@ public class Shuffle_Game : MonoBehaviour
         Rapid_Game.SetActive(false);
         Bar_Game.SetActive(false);
     }
-    void Start()
+    public void shuffle()
     {
         right_Game = Random.Range(1,3);
+        left_Game = Random.Range(1,3);
         Debug.Log(right_Game);
 
         if(right_Game == 1)
         {
             Baloom_Game.SetActive(true);
+            otimono_Game.SetActive(false);
             right_camera.transform.position = new Vector3(1210,1039,-1124);
         }
         else if(right_Game == 2)
         {
             otimono_Game.SetActive(true);
+            Baloom_Game.SetActive(false);
             right_camera.transform.position = new Vector3(-755,474,-1971); 
         }
 
@@ -41,12 +44,35 @@ public class Shuffle_Game : MonoBehaviour
         if(left_Game == 1)
         {
             Rapid_Game.SetActive(true);
+            Bar_Game.SetActive(false);
             left_camera.transform.position = new Vector3(-141,31,-154);
         }
         else if(left_Game == 2)
         {
             Bar_Game.SetActive(true);
+            Rapid_Game.SetActive(false);
             left_camera.transform.position = new Vector3(-1853,31,-154);
         }
+    }
+
+    float Game_cup = 0f;
+    float GameTimer = 0f;
+
+    void Start()
+    {
+        shuffle();
+        Game_cup = Random.Range(15,30);
+    }
+
+    void Update()
+    {
+        GameTimer += Time.deltaTime;
+
+        if(GameTimer >= Game_cup)
+        {
+            Start();
+            GameTimer = 0f;
+        }
+        
     }
 }

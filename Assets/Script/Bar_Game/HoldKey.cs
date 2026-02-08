@@ -13,7 +13,7 @@ public class HoldKey : MonoBehaviour
 
     private void Start()
     {
-         mrs = Barrier.GetComponentsInChildren<MeshRenderer>();
+        mrs = Barrier.GetComponentsInChildren<MeshRenderer>();
     }
 
     void SetBarrierVisible(bool visible)
@@ -74,5 +74,4 @@ public class HoldKey : MonoBehaviour
         }
     }
 
-    
 }
